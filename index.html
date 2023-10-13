@@ -61,5 +61,24 @@
     
   </div>
   </nav>
+    <div class="container">
+
+    <br><div class="card mt-3" style="width: 18rem;">
+    <div class="geeks">
+    <img class="card-img-top" src="images/<?= $post['foto'] ?>" alt="Card image cap">
+    </div>
+    <div class="card-body">
+    </div>
+        
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"><?= $post['caption'] ?></li>
+    <li class="list-group-item"><?= $post['lokasi'] ?></li>
+    </ul>
+    <div class="card-body">
+    <a href="hapus.php?no=<?= $post['no'] ?>"><i class="fa fa-trash" style="font-size:24px"></i></a>
+    <a href="edit.php?no=<?= $post['no'] ?>"><i class="fa fa-pencil" style="font-size:24px"></i></a>
+    </div>
+    </div>
+    <br>
 </body>
 </html>
